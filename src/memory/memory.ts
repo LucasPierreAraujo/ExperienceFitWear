@@ -380,66 +380,6 @@ export function memory() {
 
     const bairros = [
         {
-            bairro: 'Cocó',
-            frete: 0
-        },
-        {
-            bairro: 'Engenheiro Luciano Cavalcante',
-            frete: 0
-        },
-        {
-            bairro: 'Guararapes',
-            frete: 0
-        },
-        {
-            bairro: 'Parque manibura',
-            frete: 0
-        },
-        {
-            bairro: 'Cidade dos funcionários',
-            frete: 0
-        },
-        {
-            bairro: 'Jardim das oliveiras',
-            frete: 0
-        },
-        {
-            bairro: 'Papicu',
-            frete: 5.00
-        },
-        {
-            bairro: 'Fátima',
-            frete: 5.00
-        },
-        {
-            bairro: 'Aldeota',
-            frete: 5.00
-        },
-        {
-            bairro: 'Barroso',
-            frete: 6.00
-        },
-        {
-            bairro: 'Benfica',
-            frete: 7.00
-        },
-        {
-            bairro: 'Bom futuro',
-            frete: 8.00
-        },
-        {
-            bairro: 'Dionísio torres',
-            frete: 4.00
-        },
-        {
-            bairro: 'Joaquim távora',
-            frete: 5.00
-        },
-        {
-            bairro: 'Meireles',
-            frete: 7.00
-        },
-        {
             bairro: 'Combinar',
             frete: 0
         }
