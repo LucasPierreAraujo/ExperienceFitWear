@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Minus, Plus, X } from 'phosphor-react';
-import { memory } from '../../memory/memory';
 import GIF from '/gifCaixa.gif';
 import { adicionarPedidos } from '../../memory/model';
 import Formulario from './Formulario';
@@ -15,7 +14,7 @@ interface Produto {
 
 interface PropsModal {
     produto: Produto;
-    molho: boolean;
+    molho: null ;
     closeModal: () => void;
     openFrom: () => void;
 }
@@ -25,17 +24,16 @@ export default function ProdutoModal(props: PropsModal) {
     const [finalizarPedido, setFinalizarPedido] = useState(false);
     const [formulario, setFormulario] = useState(false);
     const [observacao, setObservacao] = useState('');
-    const [molhoSelecionado, setMolhoSelecionado] = useState('');
     let valorTotal = props.produto.valor * quantidade;
 
-    const { molhos } = memory();
+  
 
     function montarPedido() {
         const pedidoMontado = {
             id: props.produto.id,
             nome: props.produto.nome,
             descricao: props.produto.descricao,
-            molho: molhoSelecionado,
+            molho: null,
             observacao,
             quantidade,
             valor_unit: props.produto.valor,
@@ -67,7 +65,7 @@ export default function ProdutoModal(props: PropsModal) {
 
     return (
         <div className="fixed w-full h-full left-0 top-0 bg-black bg-opacity-15 flex items-center justify-center z-50">
-            {formulario ? <Formulario closeModal={() => setFormulario(false)} /> : null}
+            {formulario ? <Formulario closeSacola={() => null} closeModal={() => setFormulario(false)} /> : null}
             <div className="bg-[rgb(228 228 231)] md:w-[60%] md:h-[60%] h-full w-full bg-white rounded-md shadow-md overflow-hidden flex">
                 {finalizarPedido ? (
                     <div className="flex flex-col items-center justify-center w-full">

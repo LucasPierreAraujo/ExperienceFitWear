@@ -1,7 +1,7 @@
 interface IPedido {
     id: number;
     nome: string;
-    molho: string;
+    molho: null;
     descricao: string;
     observacao: string;
     quantidade: number;

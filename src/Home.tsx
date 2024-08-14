@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { MapPinLine, ShoppingBag, WhatsappLogo, X, SmileySad, Minus, Plus, Trash } from "phosphor-react";
+import { ShoppingBag, WhatsappLogo, X, SmileySad, Minus, Plus, Trash } from "phosphor-react";
 import { memory } from "./memory/memory";
 import { atualizarPedido, deletaPedido, listarPedidos } from "./memory/model";
 import ConfirmacaoExclusao from "./components/modal/ConfirmacaoExclusao";
@@ -12,7 +12,7 @@ export interface IPedido {
   id: number;
   nome: string;
   descricao: string;
-  molho: string;
+  molho: null;
   observacao: string;
   quantidade: number;
   valor_unit: number;
@@ -20,7 +20,7 @@ export interface IPedido {
 }
 
 export default function Home() {
-  const { produtos, molhos, sucos, bebidas, extras } = memory();
+  const { produtos } = memory();
   const [listaSacola, setListaSacola] = useState<IPedido[]>([]);
   const [ponteiroAtualizacao, setPonteiroAtualizacao] = useState(false);
   const [algumModalAberto, setAlgumModalAberto] = useState(false);
