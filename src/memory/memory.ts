@@ -48,6 +48,20 @@ export function memory() {
             descricao: 'Disponível na cor Verde, tamanho G.',
             imagem: '/zenithwarriors.jpeg',
             valor: 135.00
+        },
+        {
+            id: 8,
+            nome: 'Boost',
+            descricao: 'Disponível na cor Verde claro, tamanho P.',
+            imagem: '/boost.jpeg',
+            valor: 135.00
+        },
+        {
+            id: 9,
+            nome: 'ActiveAura',
+            descricao: 'Disponível na cor Fuscia, tamanhos M e G.',
+            imagem: '/activeaura.jpeg',
+            valor: 135.00
         }
     ];
 
