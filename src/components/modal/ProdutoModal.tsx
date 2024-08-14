@@ -133,17 +133,16 @@ export default function ProdutoModal(props: PropsModal) {
                                     </>
                                 )} */}
 
-                                {props.molho && (
-                                    <div className="h-fit">
-                                        <h2 className="font-semibold pb-1">Defina o tamanho e cor</h2>
-                                        <textarea
-                                            className="w-full h-36 border border-zinc-800 rounded-md p-2"
-                                            placeholder="Tamanho e cor."
-                                            onChange={capturandoTextArea}
-                                            value={observacao}
-                                        />
-                                    </div>
-                                )}
+                                <div className="h-fit">
+                                    <h2 className="font-semibold pb-1">Defina o tamanho e cor</h2>
+                                    <textarea
+                                        className="w-full h-36 border border-zinc-800 rounded-md p-2"
+                                        placeholder="Tamanho e cor."
+                                        onChange={capturandoTextArea}
+                                        value={observacao}
+                                    />
+                                </div>
+                                
                             </div>
                             <div className="flex gap-2 pt-4">
                                 <div className="flex gap-2 items-center">
