@@ -75,7 +75,7 @@ export default function ProdutoModal(props: PropsModal) {
                                 className="px-2 py-1 border border-blue-500 text-blue-500 shadow-lg rounded-lg"
                                 onClick={() => props.closeModal()}
                             >
-                                Voltar ao Cardápio
+                                Voltar ao site
                             </button>
                             <button
                                 onClick={() => {
