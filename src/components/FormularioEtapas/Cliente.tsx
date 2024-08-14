@@ -16,7 +16,7 @@ interface IProps {
 
 export function Cliente(props: IProps) {
 
-  const [cpfChecked, setCpfChecked] = useState(false);
+  const [cpfChecked] = useState(false);
   const [dados, setDados] = useState<IClienteInfor>({
     nomeCompleto: props.dados?.nomeCompleto || "",
     telefone: props.dados?.telefone || "",

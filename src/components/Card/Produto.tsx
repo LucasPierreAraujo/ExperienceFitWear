@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ProdutoModal from "../modal/ProdutoModal";
-import MontarProduto from "../modal/MontarProduto";
 
 interface Iprodutos {
   id: number;
@@ -19,10 +18,10 @@ interface IProdutosProps {
   sinalOpenFrom: (open: boolean) => void;
 }
 
-function Produto({ header, produtos,modalAberto, montar, molho, sinalOpenFrom }: IProdutosProps) {
+function Produto({ header, produtos,modalAberto, montar, sinalOpenFrom }: IProdutosProps) {
 
   const [modal, setModal] = useState(false);
-  const [modalMontarProduto, setModalMontarProduto] = useState(false);
+  const [, setModalMontarProduto] = useState(false);
 
   const [produtoSelecionado, setProdutoSelecionado] = useState({
     id: 0,
@@ -45,14 +44,12 @@ function Produto({ header, produtos,modalAberto, montar, molho, sinalOpenFrom }:
   return (
     <div className="">
       {
-        modal ? <ProdutoModal openFrom={openFromModal} molho={molho} produto={produtoSelecionado} closeModal={() => {
+        modal ? <ProdutoModal openFrom={openFromModal} molho={null} produto={produtoSelecionado} closeModal={() => {
           setModal(false)
           modalAberto(false)
         }}/> : null
       }
-      {
-        modalMontarProduto ? <MontarProduto closeModal={() => setModalMontarProduto(false)}/> : null
-      }
+
       <h3 id={header} className="font-bold text-1xl sticky top-10 bg-zinc-200 w-full px-2 z-10 py-1 text-xl">
         {header}
       </h3>

@@ -104,13 +104,7 @@ export default function Resumo(props: IProps) {
                                         <h2 className="flex-1">
                                             {pedido.nome}
                                         </h2>
-                                        {
-                                            pedido.molho || pedido.molho.length > 0 ? (
-                                                <p className="text-xs text-zinc-700">
-                                                    Molho: {pedido.molho}
-                                                </p>
-                                            ) : null
-                                        }
+
                                         <p className="text-xs text-red-600">
                                             {pedido.observacao}
                                         </p>
