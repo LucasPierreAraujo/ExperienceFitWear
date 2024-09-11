@@ -62,6 +62,48 @@ export function memory() {
             descricao: 'Disponível na cor Fuscia, tamanhos M e G.',
             imagem: '/activeaura.jpeg',
             valor: 135.00
+        },
+        {
+            id: 10,
+            nome: 'Blow',
+            descricao: 'Disponível na cor Verde claro / Verme mititar, tamanho M.',
+            imagem: '/BLOW.jpeg',
+            valor: 140.00
+        },
+        {
+            id: 11,
+            nome: 'EliteMove',
+            descricao: 'Disponível na cor Verde Militar tamanho G e cor Off no tamanho M.',
+            imagem: '/ELITEMOVE.jpeg',
+            valor: 120.00
+        },
+        {
+            id: 12,
+            nome: 'FitPro',
+            descricao: 'Disponível na cor Marinho / Azul claro, tamanho M.',
+            imagem: '/FITPRO.jpeg',
+            valor: 110.00
+        },
+        {
+            id: 13,
+            nome: 'Fitibre',
+            descricao: 'Disponível na cor Marrom / Off, tamanho M.',
+            imagem: '/FITVIBRE.jpeg',
+            valor: 110.00
+        },
+        {
+            id: 14,
+            nome: 'Movement',
+            descricao: 'Disponível na cor Marinho / Marrom / Bege, tamanho M.',
+            imagem: '/MOVEMENT.jpeg',
+            valor: 120.00
+        },
+        {
+            id: 15,
+            nome: 'Macaquinho Sprinter',
+            descricao: 'Disponível na cor Telha, tamanho M.',
+            imagem: '/SPRINTER.jpeg',
+            valor: 120.00
         }
     ];
 
